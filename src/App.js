@@ -9,6 +9,7 @@ import {
   Pressable,
   Linking,
 } from 'react-native';
+import {BubbleStories} from './components/BubbleStories';
 
 const colorGithub = '#010409';
 const imageProfileGithub =
@@ -48,6 +49,21 @@ export default function App() {
           style={[style.defaultTextColor, style.description]}>
           Estudando para ser um dev fullstack
         </Text>
+      </View>
+      <View style={style.containerStories}>
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
+        <BubbleStories />
       </View>
       <Pressable onPress={handlePressGoToGithub}>
         <View style={style.button}>
@@ -106,5 +122,9 @@ const style = StyleSheet.create({
   textButton: {
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  containerStories: {
+    marginTop: 30,
+    flexDirection: 'row',
   },
 });
